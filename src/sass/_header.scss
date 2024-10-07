@@ -1,0 +1,143 @@
+.header {
+  &__top {
+    max-width: 115rem;
+    margin: 0 auto;
+    height: 4rem;
+    display: flex;
+    background-color: $grey-dark;
+    justify-content: center;
+    color: #fff;
+
+    & > div {
+      display: flex;
+    }
+  }
+
+  &__top-contact {
+    gap: 2.5rem;
+    margin-right: auto;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    P {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__icon {
+    fill: transparent;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  &__top-social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+      height: 1.3rem;
+      width: 1.3rem;
+      fill: #fff;
+      transition: all 0.1s;
+    }
+
+    & > li {
+      background-color: $grey;
+      padding: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10rem;
+    }
+
+    li {
+      cursor: pointer;
+      &:hover svg {
+        fill: $primary-color;
+      }
+    }
+  }
+
+  // Main header
+  &__nav {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    max-width: 115rem;
+    margin: 0 auto;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__item {
+    font-size: 1.6rem;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      background-color: $primary-color-light;
+      height: 2px;
+      width: 0%;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    height: 4.5rem;
+  }
+
+  &__logo {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__logo-text {
+    display: inline-block;
+    font-size: 3.5rem;
+    color: $grey-dark;
+    font-family: 'Playfair Display';
+    font-style: italic;
+  }
+
+  &__btn {
+    background: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+$primary-color: #ad343e;
+$primary-color-light: #cc8489;
+
+$grey: #5c5c5c;
+$grey-1: #7a7d73;
+$grey-dark: #474747;
+$grey-light: #e4e7dc;
+
+$white-1: #f9f9f7;
+$white-2: #f3f3f0;
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM sans';
+  min-height: 100vh;
+}

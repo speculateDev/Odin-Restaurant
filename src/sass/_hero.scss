@@ -1,0 +1,113 @@
+.hero {
+  padding: 15rem 0;
+  background-image: url(../img/hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  &__title {
+    font-family: 'Playfair Display';
+    font-weight: 300;
+    font-size: 8rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.browse {
+  padding: 10rem;
+  text-align: center;
+
+  &__title {
+    color: #111;
+    font-family: 'Playfair Display';
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    color: $grey;
+  }
+
+  &__cards-box {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    border: 2px solid rgba($color: $grey-light, $alpha: 0.7);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+  }
+
+  &__icon {
+    background-color: $white-2;
+    border-radius: 10rem;
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      height: 4rem;
+      width: 4rem;
+      fill: #fff;
+    }
+  }
+
+  &__card-title {
+    color: #444;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  &__card-description {
+    font-size: 1.6rem;
+    color: $grey-dark;
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    position: relative;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $primary-color;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      background-color: $primary-color;
+      height: 2px;
+      width: 0;
+      transition: all 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+#icon-drinks {
+  height: 4rem;
+  width: 3.1rem;
+}
